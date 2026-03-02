@@ -14,5 +14,15 @@
 #Tempo_total= (Dias*86400)+(Horas*3600)+(Minutos*60)+Segundos
 #print("Tempo total foi de: %.2f" %Tempo_total)
 
-Hora_Trabalhada=float(input("Digite o valor dahora de trabalho: "))
-Horas_do_mês=float(input("Digite o numero de horas trabalhadas no mês: "))
+Hora_Trabalhada=float(input("Digite o valor da hora de trabalho: "))
+Horas_do_mes=float(input("Digite o numero de horas trabalhadas no mês: "))
+salario_bruto = (Hora_Trabalhada*Horas_do_mes)
+ir= salario_bruto * 0.11
+inss= salario_bruto *0.08
+sindicato= salario_bruto *0.05
+print("IR (11%) R$:",ir)
+print("INSS (8%) R$:",inss)
+print("SINDICATO (5%) R$:",sindicato)
+salario_liquido= salario_bruto - ir,inss,sindicato
+print("Salário Liquido, R$:",salario_liquido)
+
